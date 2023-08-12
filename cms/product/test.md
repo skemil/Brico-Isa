@@ -16,4 +16,5 @@ seo:
   noindex: false
   twitter:title: summary
   twitter:card: summary
+  og:image: /assets/images/charles-aqrp2nh-o8k-unsplash_compressed-p-1080.jpeg
 ---
