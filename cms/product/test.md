@@ -1,4 +1,10 @@
 ---
+variations:
+  - default: true
+    title: Test
+    slug: test
+    f_price:
+      usd: 0.01
 title: Test
 created-on: 2023-08-12T19:27:29.148Z
 updated-on: 2023-08-12T19:27:29.173Z
