@@ -30,10 +30,11 @@ f_description: "Levis Mur & Plafond Verf in Wit/Blanc: Perfecte Harmonie van
   duurzaamheid zorgt de Levis Mur & Plafond Verf ervoor dat jouw interieur er
   fris en stralend uitziet. Transformeer elke ruimte met de tijdloze schoonheid
   van deze verf, en geniet van een vleugje elegantie in je leefruimte."
+f_shippable: false
 layout: "[product].html"
 slug: levis-mur-platonf-wit-blanc
-f_shippable: false
 f_ec-product-type: Physical
+date: 2023-08-13T13:45:28.845Z
 f_tax-category: standard-taxable
 tags: product
 ---
