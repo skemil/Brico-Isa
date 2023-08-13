@@ -15,7 +15,17 @@ class ProductsData {
         if (!data.collections.product || !data.collections.product.length) {
             return JSON.stringify(products);
         }
-        
+
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on('init', user => {
+            if (!user) {
+              window.netlifyIdentity.on('login', () => {
+                document.location.href = '/admin/'
+              })
+            }
+          })
+        }
+            
         for (let product of data.collections.product) {
             for (let variation of product.data.variations) {
                 const product = {
