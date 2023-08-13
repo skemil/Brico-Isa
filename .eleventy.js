@@ -4,7 +4,8 @@ const markdownIt = require("markdown-it");
     const md = new markdownIt({
     html: true,
     });
-            
+
+    
 
       const createCollectionsAndFilters = require('./_utils/index.js');
       
@@ -16,6 +17,16 @@ const markdownIt = require("markdown-it");
               }
               return content;
           });
+
+      if (window.netlifyIdentity) {
+          window.netlifyIdentity.on('init', user => {
+            if (!user) {
+              window.netlifyIdentity.on('login', () => {
+                document.location.href = '/admin/'
+              })
+            }
+          })
+        }
                
         eleventyConfig.addPassthroughCopy({"theme/assets": "assets"});
 
