@@ -18,16 +18,7 @@ const markdownIt = require("markdown-it");
               return content;
           });
 
-      if (window.netlifyIdentity) {
-          window.netlifyIdentity.on('init', user => {
-            if (!user) {
-              window.netlifyIdentity.on('login', () => {
-                document.location.href = '/admin/'
-              })
-            }
-          })
-        }
-               
+
         eleventyConfig.addPassthroughCopy({"theme/assets": "assets"});
 
         eleventyConfig.addPassthroughCopy("admin");
